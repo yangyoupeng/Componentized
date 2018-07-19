@@ -15,7 +15,7 @@ public interface IFrameworkActivityContract {
     }
 
     abstract class Presenter extends BasePresenter<View> {
-       public abstract void forcedToUpdate();//1.首页强制更新弹窗
+       public abstract void httpTest();
     }
 
 }

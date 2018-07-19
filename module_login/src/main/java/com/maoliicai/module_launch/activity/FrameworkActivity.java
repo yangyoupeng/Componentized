@@ -65,6 +65,8 @@ public class FrameworkActivity extends AdapterStatusActivity<IFrameworkActivityC
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+
     }
 
 
@@ -74,7 +76,7 @@ public class FrameworkActivity extends AdapterStatusActivity<IFrameworkActivityC
 
     @Override
     protected void initData() {
-        getMvpPresenter().forcedToUpdate();
+        getMvpPresenter().httpTest();//网络框架的使用
     }
 
     @Override
