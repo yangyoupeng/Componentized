@@ -6,7 +6,6 @@ import android.support.annotation.Nullable;
 import com.maoliicai.common.base.BaseMvpActivity;
 import com.maoliicai.common.base.BasePresenter;
 import com.maoliicai.common.base.IBaseView;
-import com.maoliicai.common.getuipush.GetuiPushClient;
 
 /**
  * yangyoupeng  on 2018/4/20.

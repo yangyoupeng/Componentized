@@ -1,0 +1,1 @@
+include ':app', ':common', ':module_login', ':module_home', ':module_product', ':module_found', ':module_my_assets', ':share_or_push', ':thermal_remediation'

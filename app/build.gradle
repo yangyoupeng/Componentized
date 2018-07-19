@@ -12,7 +12,7 @@ def version = ext.versions
 def appPackage = ext.appID
 def dependencie = ext.dependencies
 //获取签名文件
-def keystorePropertiesFile = rootProject.file("../Miaolicai_Componentization/app/keystore.properties")
+def keystorePropertiesFile = rootProject.file("../Componentized/app/keystore.properties")
 def keystoreProperties = new Properties()
 keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
 
