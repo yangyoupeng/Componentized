@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">Module_My_Assets</string>
+    <!--我的模块-->
+    <string name="availableBalance">可用余额(元)</string>
+    <string name="default100">100</string>
+    <string name="recharge">充值</string>
+    <string name="withdrawDeposit">提现</string>
+    <string name="totalAssets">总资产(元)</string>
+    <string name="accumulatedEarnings">累计收益(元)</string>
+    <string name="uncollectedRevenue">待收收益(元)</string>
+    <string name="detail">明细</string>
+    <string name="transactionRecords">交易明细</string>
+    <string name="dedicatedCustomerService">专属客服</string>
+    <string name="contactPhoneNumber">联系电话</string>
+    <string name="contactPhone">400"-"060"-"8387</string>
+
+    <!--实名认证-->
+    <string name="authentication">实名认证</string>
+    <string name="identityCard">身份证认证</string>
+    <string name="password">设置交易密码</string>
+    <string name="bankCard">银行卡认证</string>
+    <string name="realName">真实姓名</string>
+    <string name="inputName">请输入真实姓名</string>
+    <string name="identityCardNumber">身份证号</string>
+    <string name="identityCardNumber18">请输入18位身份证号码</string>
+    <string name="instructions">为更好体验平台理财产品，确保资金安全，请先完成实名认证!</string>
+    <string name="nextStep">下一步</string>
+    <string name="smsValidation">请输入短信验证码</string>
+    <string name="resend">发送</string>
+    <string name="later">以后再说</string>
+    <string name="bank">支持银行</string>
+    <string name="confirm">确定</string>
+    <string name="modification">修改</string>
+    <string name="warmPrompt">温馨提示</string>
+    <string name="bankCardOrIdCard">绑定的银行卡持卡人,需与该身份证为同一人!</string>
+    <string name="phone">预留手机</string>
+    <string name="bankCardNumber">银行卡号</string>
+    <string name="cardPhone">请输入银行卡预留手机号</string>
+    <string name="cardNumber">请输入银行储蓄卡号</string>
+    <string name="describe">为保障您的账户和资金安全，平台遵循“同卡进出”，即通过绑定银行卡充值的资金，只能通过同一张卡取出!</string>
+    <string name="tradePassword">交易密码</string>
+    <string name="okPassword">确认密码</string>
+    <string name="password6">请输入6位数字密码</string>
+    <string name="passwordNext6">请再次输入6位数字密码</string>
+    <string name="phoneValidation">验证手机号</string>
+    <string name="sendValidationCode">已发送短信验证码到手机</string>
+    <string name="phoneNumber">152xxxx7264</string>
+    <string name="through">信息审核已通过\n请确保预留手机号可用</string>
+    <string name="describePassword">交易密码为您在喵理财的支付密码，并非银行卡密码，喵理财不会以任何方式索要银行卡密码!\n注:为确保您的资金安全，建议不要使用银行卡作为平台交易密码!</string>
+
+    <!--充值提现-->
+    <string name="withdrawRule">1、充值、提现零手续费，每天只可提现一次;\n2、工作日内提现：16:30之前提现当天到账，16:30之后提现顺延至下个工作日到账，节假日内提现：自动顺延至下个工作日到账。\n3、工商银行、农业银行、建设银行、招商银行、兴业银行每日提现限额50万，其它各行每日提现限额 49990 元。</string>
+
+    <!--设置交易密码提示-->
+    <string name="setPayPwdPrompt1">1、交易密码为您在喵理财的支付密码，并非银行卡密码，喵理财不会使用任何方式向您索要银行卡密码；</string>
+    <string name="setPayPwdPrompt2">2、为保障您的资金安全，建议不要使用银行卡密码作为平台交易密码。</string>
+
+
+    <!--资产明细-->
+    <string name="accountBalance">账户余额(元)</string>
+    <string name="collected">待收本金(元)</string>
+    <string name="revenue">待收收益(元)</string>
+    <string name="frozen">冻结金额(元)</string>
+
+
+    <!--我的投资-->
+    <string name="investment">暂无投资记录</string>
+
+</resources>

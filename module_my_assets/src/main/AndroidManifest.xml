@@ -1,0 +1,51 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.maoliicai.module_my_assets">
+
+    <application>
+        <!--个人中心-->
+        <activity android:name=".activity.PersonalCerterActivity" />
+        <!--创建手势密码引导页-->
+        <activity android:name=".activity.personal.GesturesLockActivity" />
+        <!--创建手势密码-->
+        <activity android:name=".activity.personal.CreateGesturePasswordActivity" />
+        <!--去掉手势密码-->
+        <activity android:name=".activity.personal.UnlockGesturePasswordActivity" />
+        <!--修改登录密码-->
+        <activity android:name=".activity.personal.ModifyLoginPwdActivity" />
+        <!--设置交易密码-->
+        <activity android:name=".activity.personal.SetPayPwdActivity" />
+        <!--修改交易密码-->
+        <activity android:name=".activity.personal.ModifyPayPwdActivity" />
+        <!--忘记交易密码 获取验证码-->
+        <activity android:name=".activity.personal.ForgetPayPwdActivity" />
+        <!--忘记交易密码 确认修改-->
+        <activity android:name=".activity.personal.ForgetPayPwdNextActivity"/>
+        <!--实名认证信息-->
+        <activity android:name=".activity.personal.ShowCertificationActivity" />
+        <!--设置-->
+        <activity android:name=".activity.SettingActivity" />
+        <!--联系我们-->
+        <activity android:name=".activity.setting.ContactUsActivity" />
+        <!--意见反馈-->
+        <activity android:name=".activity.setting.FeedbackActivity" />
+        <!--实名认证-->
+        <activity
+            android:name=".activity.authentication.RealNameAuthenticationActivity"
+            android:launchMode="singleTop" />
+        <!--充值-->
+        <activity android:name=".activity.RechargeActivity" />
+        <!--提现-->
+        <activity android:name=".activity.WithdrawActivity" />
+        <!--交易明细-->
+        <activity android:name=".activity.TransactionDetailsActivity" />
+        <!--我的投资-->
+        <activity android:name=".activity.MyInvestmentActivity" />
+        <!--资产明细-->
+        <activity android:name=".activity.AssetsReportActivity" />
+        <!--充值记录-->
+        <activity android:name=".activity.RechargeRecordActivity" />
+        <!--提现记录-->
+        <activity android:name=".activity.WithdrawRecordActivity" />
+
+    </application>
+</manifest>

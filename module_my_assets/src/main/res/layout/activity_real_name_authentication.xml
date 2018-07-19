@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f4"
+    android:orientation="vertical"
+    tools:layout_editor_absoluteY="25dp">
+    <!--title-->
+    <com.maoliicai.common.widget.TitleBar
+        android:id="@+id/titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        app:TitleColor="#FFF"
+        app:leftIcon="@mipmap/icon_back"
+        app:title="@string/authentication"
+        app:titleBackground="@color/color_red_fb5a5c"
+        app:hideLine="gone"/>
+
+    <com.maoliicai.module_my_assets.activity.authentication.CustomViewPager
+        android:id="@+id/vp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

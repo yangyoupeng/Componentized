@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f0f4f5"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_investor_record"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="36dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/btn_default_radius"
+                android:enabled="false"
+                android:padding="3dp"
+                android:text="到期还本付息"
+                android:textColor="#ffffff"
+                android:textSize="12sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="20dp"
+                android:background="#f2f2f2"
+                android:id="@+id/view" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="贸易通No.02"
+                android:textColor="#282929"
+                android:textSize="15sp"
+                android:layout_centerVertical="true"
+                android:layout_alignLeft="@+id/view"
+                android:layout_alignStart="@+id/view" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:id="@+id/iv_flag1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:src="@mipmap/ic_invest_history_flag1"/>
+
+            <TextView
+                android:id="@+id/tv_start_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/iv_flag1"
+                android:text="2015.10.06"
+                android:textColor="#808080"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_flag1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@id/tv_start_time"
+                android:text="投资了 "
+                android:textColor="#808080"
+                android:textSize="13sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|right"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_invest_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0.00"
+                    android:textColor="#fd8026"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/tv_investor_instructions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:layout_centerVertical="true"
+                    android:text="元"
+                    android:textColor="#808080"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="40dp"
+                android:background="#f2f2f2" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+
+            <ImageView
+                android:id="@+id/iv_flag2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:src="@mipmap/ic_invest_history_flag2_1"/>
+
+            <TextView
+                android:id="@+id/tv_end_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/iv_flag2"
+                android:text="2015.10.06"
+                android:textColor="#808080"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_flag2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@id/tv_end_time"
+                android:text="到期 "
+                android:textColor="#808080"
+                android:textSize="13sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="40dp"
+                android:background="#f2f2f2" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+
+            <ImageView
+                android:id="@+id/iv_flag3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:src="@mipmap/ic_invest_history_flag3_1"/>
+
+            <TextView
+                android:id="@+id/tv_earnings_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/iv_flag3"
+                android:text="2015.10.06"
+                android:textColor="#808080"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_flag3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@id/tv_earnings_time"
+                android:text="到期收益"
+                android:textColor="#808080"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_investor_tg2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30dp"
+                android:text="元"
+                android:textColor="#808080" />
+
+            <TextView
+                android:id="@+id/tv_earnings_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="10000.00"
+                android:layout_toLeftOf="@id/tv_investor_tg2"
+                android:textColor="#fd8026"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="#f2f2f2" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#ffffff">
+
+            <Button
+                android:id="@+id/bt_project_details"
+                android:layout_width="wrap_content"
+                android:layout_height="33dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/select_bt_investor_history_project_details" />
+
+            <Button
+                android:id="@+id/bt_electronic_contract"
+                android:layout_width="wrap_content"
+                android:layout_height="33dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/select_bt_investor_history_electronic_contract" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

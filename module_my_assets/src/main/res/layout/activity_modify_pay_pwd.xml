@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#f0f4f5"
+    android:orientation="vertical">
+
+    <com.maoliicai.common.widget.TitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        app:TitleColor="#FFF"
+        app:hideLine="gone"
+        app:leftIcon="@mipmap/icon_back"
+        app:title="修改交易密码"
+        app:titleBackground="@color/color_red_fb5a5c"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/color_white" >
+
+        <TextView
+            android:id="@+id/tv_tag1"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="原交易密码"
+            android:textColor="@color/color_3"
+            android:textSize="15dp" />
+
+        <com.maoliicai.common.widget.EditTextLayout
+            android:id="@+id/et_paypwd_old"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_toRightOf="@+id/tv_tag1"
+            android:layout_alignParentBottom="true"
+            app:hintContent="请输入原交易密码"
+            app:editType="4"
+            app:hideBottomLine="true"/>
+
+        <View style="@style/ViewDefaultLine"
+              android:layout_alignParentBottom="true"
+              android:layout_marginLeft="15dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/color_white" >
+
+        <TextView
+            android:id="@+id/tv_tag2"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="新密码"
+            android:textColor="@color/color_3"
+            android:textSize="15dp" />
+
+        <com.maoliicai.common.widget.EditTextLayout
+            android:id="@+id/et_paypwd_new1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_toRightOf="@+id/tv_tag2"
+            android:layout_alignParentBottom="true"
+            app:hintContent="请输入新交易密码"
+            app:editType="4"
+            app:hideBottomLine="true"/>
+
+        <View style="@style/ViewDefaultLine"
+              android:layout_alignParentBottom="true"
+              android:layout_marginLeft="15dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#ffffff" >
+
+        <TextView
+            android:id="@+id/tv_tag3"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="确认密码"
+            android:textColor="@color/color_3"
+            android:textSize="15sp" />
+
+        <com.maoliicai.common.widget.EditTextLayout
+            android:id="@+id/et_paypwd_new2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_toRightOf="@+id/tv_tag3"
+            android:layout_alignParentBottom="true"
+            app:hintContent="请再次输入新交易密码"
+            app:editType="4"
+            app:hideBottomLine="true"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/btn_radius5dp_red"
+        android:text="确认"
+        android:textColor="@color/color_white"
+        android:textSize="15dp"
+        android:enabled="false"/>
+
+    <TextView
+        android:id="@+id/tv_forgetpwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:padding="10dp"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="10dip"
+        android:text="忘记交易密码"
+        android:textColor="@color/color_8"
+        android:textSize="13dp" />
+
+</LinearLayout>

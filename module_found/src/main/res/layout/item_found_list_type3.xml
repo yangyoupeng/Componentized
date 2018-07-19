@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_found_rv_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.maoliicai.common.widget.RoundRectImageView
+            android:id="@+id/imageView"
+            android:layout_width="345dp"
+            android:layout_height="190dp"
+            android:scaleType="fitXY"
+            android:visibility="visible"
+            app:roundRadiusTopLeft="5dp"
+            app:roundRadiusTopRight="5dp" />
+
+        <FrameLayout
+            android:id="@+id/fl_shade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_bg_shade"
+                android:layout_width="345dp"
+                android:layout_height="190dp"
+                android:src="@mipmap/bg_find_grey" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="已结束"
+                android:textColor="@color/color_white"
+                android:textSize="18sp"
+                tools:ignore="HardcodedText" />
+
+        </FrameLayout>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="345dp"
+        android:layout_height="30dp"
+        android:background="@drawable/selector_corners_bottom_5"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:text="新手惊喜三重奏"
+            android:textColor="@color/color_3"
+            android:textSize="13sp"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="2018.03.13"
+            android:textColor="@color/color_9"
+            android:textSize="13sp"
+            tools:ignore="HardcodedText,RtlHardcoded,SpUsage" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--统一的toolbar-->
+    <declare-styleable name="TitleBar">
+        <attr name="title" format="string" />
+        <attr name="TitleColor" format="color" />
+
+        <attr name="leftTextColor" format="color" />
+        <attr name="leftIcon" format="reference" />
+        <attr name="leftText" format="string" />
+
+        <attr name="rightTextColor" format="color" />
+        <attr name="rightIcon" format="reference" />
+        <attr name="rightText" format="string" />
+
+        <attr name="titleBackground" format="color" />
+        <attr name="hideLine">
+            <enum name="visible" value="0" />
+            <enum name="invisible" value="4" />
+            <enum name="gone" value="8" />
+        </attr>
+
+    </declare-styleable>
+
+    <!-- LockPatternView class attributes -->
+    <declare-styleable name="LockPatternView">
+        <!--
+             Aspect to use when drawing LockPatternView. Choices are "square"(default), "lock_width"
+             or "lock_height"
+        -->
+        <attr name="aspect">
+            <enum name="square" value="0" />
+            <enum name="lockWidth" value="1" />
+            <enum name="lockHeight" value="2" />
+        </attr>
+        <attr name="line" format="color" />
+        <attr name="btnNormal" format="reference" />
+        <attr name="btnTouched" format="reference" />
+        <attr name="circleNormal" format="reference" />
+        <attr name="circleGreen" format="reference" />
+        <attr name="circleRed" format="reference" />
+        <attr name="arrowGreenUp" format="reference" />
+        <attr name="arrowRedUp" format="reference" />
+    </declare-styleable>
+
+
+    <!--发现页面 自定义图片-->
+    <!--圆角矩形-->
+    <declare-styleable name="RoundRectImageView">
+        <attr name="roundRadiusTopLeft" format="dimension"/>
+        <attr name="roundRadiusTopRight" format="dimension"/>
+        <attr name="roundRadiusBottomLeft" format="dimension"/>
+        <attr name="roundRadiusBottomRight" format="dimension"/>
+    </declare-styleable>
+
+    <!--自定义EditText-->
+    <declare-styleable name="EditTextLayout">
+        <attr name="editType" format="integer"/>
+        <attr name="imageContent" format="reference|color" />
+        <attr name="hintContent" format="string" />
+        <attr name="hideBottomLine" format="boolean" />
+    </declare-styleable>
+
+</resources>

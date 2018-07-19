@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#f0f4f5">
+
+    <com.maoliicai.common.widget.TitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        app:TitleColor="@color/color_white"
+        app:hideLine="gone"
+        app:leftIcon="@mipmap/icon_back"
+        app:title="忘记交易密码"
+        app:titleBackground="@color/color_red_fb5a5c"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/color_white"
+        >
+        <TextView
+            android:id="@+id/tv_tag1"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="手机"
+            android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true"
+            android:textSize="15sp"
+            android:textColor="@color/color_3"
+            />
+
+        <com.maoliicai.common.widget.EditTextLayout
+            android:id="@+id/et_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_toRightOf="@+id/tv_tag1"
+            android:layout_alignParentBottom="true"
+            app:hintContent="请输入手机号码"
+            app:editType="1"
+            app:hideBottomLine="true"/>
+
+
+
+        <!--<com.maoliicai.common.widget.ClearEditText-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:paddingRight="15dp"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_toRightOf="@+id/tv_tag1"-->
+            <!--android:background="@drawable/login_background"-->
+            <!--android:hint="请输入手机号码"-->
+            <!--android:numeric="integer"-->
+            <!--android:maxLength="11"-->
+            <!--android:singleLine="true"-->
+            <!--android:textColor="@color/color_3"-->
+            <!--android:textColorHint="@color/color_c"-->
+            <!--android:textSize="15dp"-->
+            <!--android:visibility="gone"/>-->
+
+        <View style="@style/ViewDefaultLine"
+              android:layout_alignParentBottom="true"
+              android:layout_alignLeft="@+id/tv_tag1"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/color_white"
+        >
+        <TextView
+            android:id="@+id/tv_tag2"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="验证码"
+            android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true"
+            android:textSize="15sp"
+            android:textColor="@color/color_3"
+            />
+
+        <com.maoliicai.common.widget.EditTextLayout
+            android:id="@+id/et_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_toRightOf="@+id/tv_tag2"
+            android:layout_alignParentBottom="true"
+            app:hintContent="请输入验证码"
+            app:editType="3"
+            app:hideBottomLine="true"/>
+
+        <!--<com.maoliicai.common.widget.ClearEditText-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_toRightOf="@+id/tv_tag2"-->
+            <!--android:background="@drawable/login_background"-->
+            <!--android:hint="请输入验证码"-->
+            <!--android:numeric="integer"-->
+            <!--android:maxLength="6"-->
+            <!--android:singleLine="true"-->
+            <!--android:textColor="@color/color_3"-->
+            <!--android:textColorHint="@color/color_c"-->
+            <!--android:textSize="15dp"-->
+            <!--android:visibility="gone"/>-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/btn_get_code"-->
+            <!--android:layout_width="120dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:background="@color/color_white"-->
+            <!--android:text="获取验证码"-->
+            <!--android:textColor="@color/color_red_fb5a5c"-->
+            <!--android:textSize="14dp"-->
+            <!--android:visibility="gone"/>-->
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_next"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/btn_radius5dp_red"
+        android:text="下一步"
+        android:textColor="@color/color_white"
+        android:textSize="15dp"
+        android:enabled="false"/>
+
+</LinearLayout>

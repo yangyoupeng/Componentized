@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <!--app统一颜色 -->
+
+
+    <color name="backgroundLine">#E4E4E4</color>
+    <color name="white">#ffffffff</color>
+
+    <color name="color_title">#FFFFFF</color>
+    <color name="color_bs">#F3F3F3</color>
+    <color name="color_rd">#3e91d5</color>
+    <color name="color_line">#DCDCDC</color>
+    <color name="color_89">#898989</color>
+    <color name="color_red">#f4583f</color>
+    <!--进度条底色-->
+    <color name="color_00d">#a0000000</color>
+    <color name="color_ea">#eaebef</color>
+    <color name="color_white">#ffffff</color>
+    <color name="color_f5">#f5f5f5</color>
+    <color name="color_white_f2">#f2f2f2</color>
+    <color name="color_bg">#F6F6F6</color>
+    <color name="color_5">#555555</color>
+    <color name="color_5d">#5d5d5d</color>
+    <color name="color_8">#888888</color>
+    <color name="color_fd">#fd8026</color>
+    <color name="color_bg_pro">#F0F0F0</color>
+    <color name="color_bg_pro_red">#8f00</color>
+    <color name="color_login_bas">#f27a70</color>
+
+
+    <color name="color_hei_8">#00000000</color>
+    <color name="color_3">#333333</color>
+    <color name="color_f4">#f4f4f4</color>
+    <color name="color_f3">#f3f3f3</color>
+    <color name="color_be">#bebebe</color>
+    <color name="color_red_fb5a5c">#fb5a5c</color>
+    <color name="color_red_eb504b">#eb504b</color>
+    <color name="color_yellow_fcc328">#fcc328</color>
+    <color name="color_blue_4a99ed">#4a99ed</color>
+    <color name="color_9">#999999</color>
+    <color name="color_yellow_ffb400">#ffb400</color>
+    <color name="color_80">#808080</color>
+
+</resources>

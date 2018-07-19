@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ll_smrz_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <com.maoliicai.common.widget.TitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        app:TitleColor="#FFF"
+        app:hideLine="gone"
+        app:leftIcon="@mipmap/icon_back"
+        app:rightIcon="@mipmap/icon_question"
+        app:title="实名认证"
+        app:titleBackground="@color/color_red_fb5a5c"
+        />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="24dp" >
+
+        <LinearLayout
+            android:id="@+id/rl_bank_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_bank_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:text="银行卡"
+                android:textColor="@color/color_3"
+                android:textSize="15dp" />
+
+            <View
+                android:id="@+id/view_bank_card_line"
+                android:layout_width="45dp"
+                android:layout_height="2dp"
+                android:layout_marginTop="7dp"
+                android:background="@color/color_red_fb5a5c" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rl_id_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="33dp"
+            android:layout_toRightOf="@+id/rl_bank_card"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_id_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="身份证信息"
+                android:textColor="@color/color_9"
+                android:textSize="15sp" />
+
+            <View
+                android:id="@+id/view_id_card_line"
+                android:layout_width="75dp"
+                android:layout_height="2dp"
+                android:layout_marginTop="7dp"
+                android:background="@color/color_9" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.maoliicai.module_my_assets.view.MyHorizontalScrollView
+        android:id="@+id/msv_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/rl_bank"
+                android:layout_width="280dp"
+                android:layout_height="175dp"
+                android:layout_marginLeft="40dp"
+                android:background="@mipmap/bg_bankcard" >
+
+                <Button
+                    android:layout_width="95dp"
+                    android:layout_height="35dp"
+                    android:layout_margin="10dp"
+                    android:background="@mipmap/bg_transparency"
+                    android:text="已绑定银行卡"
+                    android:textColor="@color/color_white"
+                    android:textSize="12sp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="45dp" >
+
+                    <ImageView
+                        android:id="@+id/iv_bank"
+                        android:layout_width="19dp"
+                        android:layout_height="19dp"
+                         />
+
+                    <TextView
+                        android:id="@+id/tv_bank_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="8dp"
+                        android:layout_toRightOf="@+id/iv_bank"
+                        android:text=""
+                        android:textColor="@color/color_white" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/v_line"
+                    android:layout_width="140dp"
+                    android:layout_height="0.5dp"
+                    android:layout_centerInParent="true"
+                    android:background="#25ffffff" />
+
+                <TextView
+                    android:id="@+id/tv_bank_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/v_line"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="16dp"
+                    android:text=""
+                    android:textColor="@color/color_white" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="280dp"
+                android:layout_height="175dp"
+                android:layout_marginLeft="10dp"
+                android:background="@mipmap/bg_idcard" >
+
+                <Button
+                    android:layout_width="95dp"
+                    android:layout_height="35dp"
+                    android:layout_margin="10dp"
+                    android:background="@mipmap/bg_transparency"
+                    android:text="已实名认证"
+                    android:textColor="@color/color_white"
+                    android:textSize="12sp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="45dp" >
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="2dp"
+                        android:text=""
+                        android:textColor="@color/color_white" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/v_line2"
+                    android:layout_width="140dp"
+                    android:layout_height="0.5dp"
+                    android:layout_centerInParent="true"
+                    android:background="#25ffffff" />
+
+                <TextView
+                    android:id="@+id/tv_id_cd_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/v_line2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="16dp"
+                    android:text=""
+                    android:textColor="@color/color_white" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="20dp"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </com.maoliicai.module_my_assets.view.MyHorizontalScrollView>
+
+    <RelativeLayout
+        android:id="@+id/rl_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="35dp" >
+
+        <ImageView
+            android:id="@+id/iv_tag1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/icon_yes" />
+
+        <TextView
+            android:id="@+id/tv_tag1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/iv_tag1"
+            android:text="实名认证"
+            android:textColor="@color/color_3"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:id="@+id/iv_tag2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_toRightOf="@+id/tv_tag1"
+            android:background="@mipmap/icon_yes" />
+
+        <TextView
+            android:id="@+id/tv_tag2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/iv_tag2"
+            android:text="银行卡绑定"
+            android:textColor="@color/color_3"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_unbind"
+        android:layout_width="310dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="34dp"
+        android:background="@drawable/selector_button_red"
+        android:text="解绑/更换"
+        android:textColor="@color/color_white"
+        android:textSize="15sp" />
+</LinearLayout>

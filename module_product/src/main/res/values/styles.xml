@@ -1,0 +1,49 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <!--<item name="android:windowNoTitle">true</item>-->
+        <!--<item name="android:windowActionBar">false</item>-->
+    </style>
+
+
+    <!--产品详情页面-->
+    <style name="ViewDefaultLine">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">#e1e1e1</item>
+    </style>
+
+    <style name="ViewDefaultStrip">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">6dp</item>
+        <item name="android:background">#f3f3f3</item>
+    </style>
+
+    <style name="mProgress_circle">
+        <item name="android:indeterminateDrawable">@drawable/progressbar_circle_1</item>
+        <item name="android:minWidth">28dp</item>
+        <item name="android:minHeight">28dp</item>
+        <item name="android:maxWidth">28dp</item>
+        <item name="android:maxHeight">28dp</item>
+    </style>
+
+
+    <!--投资页面-->
+    <style name="ViewVerticalLine">
+        <item name="android:layout_width">1px</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">#e1e1e1</item>
+    </style>
+
+    <!--我的券包  checkbox-->
+    <style name="CustomCheckBoxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/checkbox_style</item>
+    </style>
+
+</resources>

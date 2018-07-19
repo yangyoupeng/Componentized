@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/layout_fx"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.maoliicai.common.widget.RoundRectImageView
+            android:id="@+id/imageView"
+            android:layout_width="300dp"
+            android:layout_height="305dp"
+            android:scaleType="fitXY"
+            app:roundRadiusTopLeft="10dp"
+            app:roundRadiusTopRight="10dp"
+            android:visibility="visible"/>
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_radius10dp_white_bottom"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_to_ticket"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:background="@null"
+                android:text="查看奖励"
+                android:textSize="15dp"
+                android:textColor="@color/color_80"
+                />
+
+            <View style="@style/ViewDefaultLineVertical"/>
+
+            <TextView
+                android:id="@+id/tv_to_invest"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:background="@null"
+                android:text="去投资"
+                android:textSize="15dp"
+                android:textColor="@color/color_red_fb5a5c"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

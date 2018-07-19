@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="请输入交易密码" />
+
+        <ImageView
+            android:id="@+id/iv_dismiss"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/icon_pay_dialog_exit" />
+    </FrameLayout>
+
+    <View style="@style/ViewDefaultLine" />
+
+    <com.maoliicai.common.widget.dialog.gridPasswordView.GridPasswordView
+        android:id="@+id/pwd"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginBottom="21dp"
+        android:layout_marginLeft="29dp"
+        android:layout_marginRight="29dp"
+        android:layout_marginTop="15dp"
+        android:background="#FFF"
+        android:clickable="true" />
+</LinearLayout>

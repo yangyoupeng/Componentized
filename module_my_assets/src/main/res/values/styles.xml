@@ -1,0 +1,23 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!--自定义控件，用来把edittext里面的内容 格式转化成：身份证，银行卡，手机号-->
+    <declare-styleable name="ContentWithSpaceEditText">
+        <attr name="epaysdk_type" format="enum">
+            <enum name="phone" value="0" />
+            <enum name="card" value="1" />
+            <enum name="IDCard" value="2" />
+            <enum name="default3" value="3" />
+            <enum name="password" value="4" />
+        </attr>
+    </declare-styleable>
+
+    <style name="assetsReport" >
+        <item name="android:textColor">@color/color_3</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentEnd" tools:ignore="NewApi">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_alignParentTop">true</item>
+    </style>
+
+</resources>

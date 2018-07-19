@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/color_white"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <include layout="@layout/toolbar_layout"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/icon_login_head"
+        android:layout_marginTop="50dp"/>
+
+    <com.maoliicai.common.widget.EditTextLayout
+        android:id="@+id/et_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="50dp"
+        app:imageContent="@mipmap/icon_phone"
+        app:hintContent="请输入您的手机号码"
+        app:editType="1"/>
+
+    <TextView
+        android:id="@+id/tv_next"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/btn_radius5dp_red"
+        android:text="下一步"
+        android:textColor="#ffffff"
+        android:textSize="15dp"
+        android:enabled="false"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/icon_login_bottom_10888"
+        android:layout_marginTop="45dp"/>
+
+
+</LinearLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/shape_dialog"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="300dp"
+            android:layout_height="305dp"
+            android:scaleType="fitXY"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:gravity="center"
+            android:textColor="@color/color_3"
+            android:textSize="15sp"
+            android:textStyle="normal"
+            android:visibility="gone"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#2000" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_close"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/color_3"
+                android:textSize="15dp" />
+
+            <View
+                android:id="@+id/view_bt_line"
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="#2000" />
+
+            <TextView
+                android:id="@+id/tv_confirm"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/color_red_fb5a5c"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_layout_second"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        app:tabIndicatorColor="@color/color_red_fb5a5c"
+        app:tabSelectedTextColor="@color/color_red_fb5a5c"
+        app:tabTextColor="@color/color_9"
+        android:layout_height="45dp">
+
+
+    </android.support.design.widget.TabLayout>
+
+    <com.maoliicai.module_product.widget.HackyViewPager
+        android:id="@+id/hvp_second"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.maoliicai.module_product.widget.HackyViewPager>
+
+</LinearLayout>

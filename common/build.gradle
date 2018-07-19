@@ -1,0 +1,101 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.jakewharton.butterknife'
+
+def ext = rootProject.ext
+def version = ext.versions
+def dependencie = ext.dependencies
+
+android {
+    compileSdkVersion version.compileSdkVersion
+
+    defaultConfig {
+        minSdkVersion version.minSdkVersion
+        targetSdkVersion version.targetSdkVersion
+        versionCode version.versionCode
+        versionName version.versionName
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+
+}
+
+dependencies {
+    api fileTree(dir: 'libs', include: ['*.jar'])
+  //  api project(':share_or_push')//分享模块
+    compileOnly project(':thermal_remediation')//热更新模块
+
+    api dependencie.junit
+    api dependencie.runner
+    api dependencie.core
+
+    //v7包和v4包
+    api dependencie.appcompat_v7
+    api dependencie.support_v4
+
+    //Material Design   Android 5.0新特性
+    api dependencie.constraint_layout
+    api dependencie.design
+    api dependencie.cardview
+    api dependencie.customtabs
+    api dependencie.recyclerview
+
+    //一个开源库，封装recycle_adapter，简化代码
+    api dependencie.recycle_adapter
+    //一个强大的下拉刷新库
+    api dependencie.smart_refresh_layout
+
+    //网络框架OKhttp
+    api dependencie.okhttp3
+    api dependencie.okhttp3_logging
+    api dependencie.okio
+
+    //retrofit
+    api dependencie.retrofit2
+    api dependencie.retrofit2_adapter_rxjava2
+    api dependencie.retrofit2_converter_gson
+
+    //Rx https://github.com/ReactiveX/RxAndroid https://github.com/ReactiveX/RxJava
+    api dependencie.rxjava
+    api dependencie.rxandroid2
+    api dependencie.rxlifecycle//处理rxjava内存泄露
+    api dependencie.rxlifecycle_components
+    api dependencie.rxpermissions//方便处理6.0运行时动态权限问题
+
+    //Gson https://github.com/google/gson
+    api dependencie.gson
+
+    //Log日志工具 https://github.com/orhanobut/logger
+    api dependencie.logger
+
+    //dex解决方法超过65535数量
+    api dependencie.multidex
+
+    //阿里开源的路由框架，用于组件化通信
+    api dependencie.arouter_api
+
+    //黄油刀
+    implementation dependencie.butterknife
+    annotationProcessor dependencie.butterknife_compiler
+
+    //图片轮播控件
+    api dependencie.banner
+    //图片加载框架
+    api dependencie.glide
+
+    api dependencie.eventbus
+
+    //个推sdk    只让app主模块去依赖
+   // compileOnly dependencie.getui
+}

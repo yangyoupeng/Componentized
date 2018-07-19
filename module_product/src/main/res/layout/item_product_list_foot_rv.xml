@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_show_Project"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+
+        android:drawablePadding="@dimen/dp_10"
+        android:drawableRight="@mipmap/more"
+        android:paddingBottom="15dp"
+        android:text="@string/hot_show_project"
+        android:textColor="@color/color_9"
+        android:textSize="12sp">
+
+    </TextView>
+
+</LinearLayout>

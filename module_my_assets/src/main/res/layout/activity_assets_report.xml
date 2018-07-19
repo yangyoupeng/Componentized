@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.maoliicai.common.base.BaseActivity">
+
+    <include layout="@layout/toolbar_layout_return" />
+
+    <com.maoliicai.module_my_assets.view.SelfStatistics
+        android:id="@+id/progress"
+        android:layout_width="230dp"
+        android:layout_height="230dp"
+        android:layout_gravity="center"
+        android:layout_margin="25dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:drawableLeft="@drawable/assets_dot_red"
+            android:drawablePadding="@dimen/dp_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/accountBalance"
+            android:textColor="@color/color_9"
+            android:textSize="15sp"
+            android:drawableStart="@drawable/assets_dot_red" />
+
+        <TextView
+            android:id="@+id/tv_accountBalance"
+            style="@style/assetsReport"
+            android:text="0.00" />
+
+    </RelativeLayout>
+
+    <View style="@style/ViewDefaultLine"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:drawableLeft="@drawable/assets_dot_yellow"
+            android:drawablePadding="@dimen/dp_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/collected"
+            android:textColor="@color/color_9"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_collected"
+            style="@style/assetsReport"
+            android:text="0.00" />
+
+    </RelativeLayout>
+
+    <View style="@style/ViewDefaultLine"
+          android:layout_marginLeft="15dp"
+          android:layout_marginRight="15dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:drawableLeft="@drawable/assets_dot_blue"
+            android:drawablePadding="@dimen/dp_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/revenue"
+            android:textColor="@color/color_9"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_revenue"
+            style="@style/assetsReport"
+            android:text="0.00" />
+
+    </RelativeLayout>
+
+    <View style="@style/ViewDefaultLine"
+          android:layout_marginLeft="15dp"
+          android:layout_marginRight="15dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:drawableLeft="@drawable/assets_dot_purple"
+            android:drawablePadding="@dimen/dp_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/frozen"
+            android:textColor="@color/color_9"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_frozen"
+            style="@style/assetsReport"
+            android:text="0.00" />
+
+    </RelativeLayout>
+</LinearLayout>

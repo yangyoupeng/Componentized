@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/tv_transaction_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_10"
+        android:text="11111"
+        android:background="@color/color_e4"
+        android:textColor="@color/holo_gray_light" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_transaction_head"
+        android:layout_marginBottom="9dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="6dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:id="@+id/tv_td_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="充值"
+                android:textColor="#333333" />
+
+            <TextView
+                android:id="@+id/tv_td_je"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="100"
+                android:textColor="#333333" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="3dp">
+
+            <TextView
+                android:id="@+id/tv_td_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10-24"
+                android:textColor="#808080" />
+
+            <TextView
+                android:id="@+id/tv_td_ye"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="余额114.92"
+                android:textColor="#808080" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="6dp"
+            android:background="#f2f2f2" />
+
+        <TextView
+            android:id="@+id/tv_td_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="用户提现"
+            android:textColor="#808080"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:background="#e5e5e5" />
+
+</RelativeLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_ibck"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/color_red_fb5a5c">
+
+        <ImageButton
+            android:id="@+id/ib_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/icon_back"
+            android:background="@null"
+            android:padding="15dp"
+            />
+        <ImageButton
+            android:id="@+id/ib_close_all"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_toRightOf="@+id/ib_close"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_close_white"
+            android:background="@null"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/color_white"
+            android:text="标题"
+            android:textSize="16sp"
+             />
+
+        <ImageButton
+            android:id="@+id/ib_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/ic_share_white"
+            android:background="@null"
+            android:padding="15dp"
+            android:visibility="gone"
+            />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+</LinearLayout>

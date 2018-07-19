@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_layout_return" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_invest_success"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:src="@mipmap/bg_invest_success" />
+
+        <TextView
+            android:id="@+id/tv_profit_standard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:textColor="@color/color_3"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:id="@+id/tv_profit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:gravity="center"
+                android:text="0.00"
+                android:textColor="@color/color_red_fb5a5c"
+                android:textSize="40sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:paddingTop="15dp"
+                android:text="%"
+                android:textColor="@color/color_red_fb5a5c"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/percent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_marginLeft="2dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="15dp"
+                android:background="@mipmap/percent"
+                android:gravity="center"
+                android:paddingLeft="9dp"
+                android:paddingRight="5dp"
+                android:textColor="@color/color_white"
+                android:visibility="invisible"
+                android:textSize="@dimen/sp_12" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_due_to_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/color_3"
+            android:textSize="15sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:id="@+id/tv_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/investmentAmount"
+                android:textColor="@color/color_9"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_amount_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:text="0.00"
+                android:textColor="@color/color_3"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_deadline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/tv_amount"
+                android:layout_marginTop="10dp"
+                android:text="@string/deadline"
+                android:textColor="@color/color_9"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_deadline_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_deadline"
+                android:layout_alignBottom="@+id/tv_deadline"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:text="0.00"
+                android:textColor="@color/color_3"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_expected_earnings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/tv_deadline"
+                android:layout_marginTop="10dp"
+                android:text="@string/expectedEarnings"
+                android:textColor="@color/color_9"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_expected_earnings_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_expected_earnings"
+                android:layout_alignBottom="@+id/tv_expected_earnings"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:text="0.00"
+                android:textColor="@color/color_3"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_integral_reward"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/tv_expected_earnings"
+                android:layout_marginTop="10dp"
+                android:text="@string/integralReward"
+                android:textColor="@color/color_9"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_integral_reward_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_integral_reward"
+                android:layout_alignBottom="@+id/tv_integral_reward"
+                android:layout_alignEnd="@+id/tv_deadline_number"
+                android:layout_alignRight="@+id/tv_deadline_number"
+                android:text="0.00"
+                android:textColor="@color/color_3"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp">
+
+
+            <Button
+                android:id="@+id/bt_electronic_contract"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_default_stroke"
+                android:text="@string/electronicContract"
+                android:textColor="#F4583F"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/bt_complete"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_default_radius"
+                android:text="@string/complete"
+                android:textColor="#FFF"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/color_white" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

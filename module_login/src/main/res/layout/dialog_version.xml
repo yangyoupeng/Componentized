@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center">
+
+    <ImageView
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/bg_version"/>
+
+    <LinearLayout
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_corners_bottom_10"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_versionNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:textColor="@color/color_red_fb5a5c"
+            android:textSize="15dp"
+            android:text="新版本1.1.0"
+            />
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textSize="12dp"
+            android:textColor="@color/color_3"
+            android:text=""/>
+
+        <TextView
+            android:id="@+id/tv_update"
+            android:layout_width="175dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"
+            android:gravity="center"
+            android:text="立即更新"
+            android:textColor="@color/color_white"
+            android:textSize="15dp"
+            android:background="@drawable/selector_corners_red"
+            android:visibility="gone"/>
+
+        <com.maoliicai.module_launch.widget.VersionProgressBar
+            android:id="@+id/progress_bar"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="175dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/tv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:src="@mipmap/ic_close_version"/>
+
+</LinearLayout>

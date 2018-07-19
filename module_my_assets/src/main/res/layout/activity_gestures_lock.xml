@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="#f0f4f5"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:visibility="visible">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.maoliicai.common.widget.TitleBar
+            android:id="@+id/title_bar"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            app:titleBackground="@color/color_red_fb5a5c"
+            app:TitleColor="@color/color_white"
+            app:hideLine="gone"
+            app:leftIcon="@mipmap/icon_back"
+            app:title="手势密码"/>
+
+        <TextView
+            android:id="@+id/gesturepwd_guide_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30.0dip"
+            android:layout_marginRight="30.0dip"
+            android:layout_marginTop="40.0dip"
+            android:gravity="center_horizontal"
+            android:text="@string/gesture_password_guide_text"
+            android:textColor="#333333"
+            android:textSize="13sp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30.0dip"
+            android:src="@mipmap/gesture_guide_pic"/>
+
+        <TextView
+            android:id="@+id/tv_gesturepwd_guide"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="45dp"
+            android:background="@drawable/btn_radius5dp_red"
+            android:gravity="center"
+            android:text="@string/gesture_password_guide_creat_btn"
+            android:textColor="@color/color_white"
+            android:textSize="15dp"/>
+    </LinearLayout>
+
+</ScrollView>

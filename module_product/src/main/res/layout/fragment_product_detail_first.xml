@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+
+    <!--新加两个标签 start-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/tv_product_details_label1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="@string/investmentEtarn"
+            android:textColor="@color/color_red_fb5a5c"
+            android:textSize="10sp"
+            tools:ignore="SmallSp" />
+
+        <TextView
+            android:id="@+id/tv_product_details_label2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="@string/noPurchase"
+            android:textColor="@color/color_red_fb5a5c"
+            android:textSize="10sp"
+            tools:ignore="SmallSp" />
+
+
+    </LinearLayout>
+    <!--新加 end-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="50dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.00"
+                android:textColor="#F4583F"
+                android:textSize="55sp" />
+
+            <TextView
+                android:id="@+id/tv_percent_word"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_rate"
+                android:layout_marginBottom="10dp"
+                android:layout_toRightOf="@+id/tv_rate"
+                android:gravity="center"
+                android:text="%"
+                android:textColor="#F4583F" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_interest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginTop="15dp"
+            android:background="@mipmap/percent"
+            android:gravity="center"
+            android:paddingLeft="3dp"
+            android:textColor="@color/color_white"
+            android:textSize="10sp"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_tips_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_rate"
+        android:layout_marginRight="@dimen/dp_10"
+        android:gravity="center"
+        android:text="@string/hot_expected_rate"
+        android:textColor="@color/color_9"
+        android:textSize="13sp" />
+
+    <com.maoliicai.module_product.widget.LinearProgressView
+        android:id="@+id/progress"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        app:bgColor="@color/color_e4"
+        app:fgColor="@color/color_red_fb5a5c"
+        app:heightProgress="2dp"
+        app:radiusProgress="0dp"
+        app:showPercent="true"
+        app:textSizePercent="9dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:paddingBottom="10dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_time_limit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="0天"
+                android:textColor="@color/color_3"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_time_limit"
+                android:layout_marginTop="5dp"
+                android:text="理财期限"
+                android:textColor="#888"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/color_f4" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_money_limit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="0元"
+                android:textColor="@color/color_3"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_money_limit"
+                android:layout_marginTop="5dp"
+                android:text="起购金额"
+                android:textColor="@color/color_9"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/color_f4" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_surplus_can_invest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="0元"
+                android:textColor="@color/color_3"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="剩余可投"
+                android:textColor="@color/color_9"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/layout_default_strip" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="@dimen/dp_10"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@mipmap/total" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_weight="2"
+            android:text="@string/total"
+            android:textColor="@color/color_9"
+            android:textSize="15sp" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="4">
+
+            <TextView
+                android:id="@+id/tv_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:text="@string/productDefault"
+                android:textColor="@color/color_3"
+
+                android:textSize="15sp"
+                tools:ignore="RtlSymmetry" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/backgroundLine" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="@dimen/dp_10"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@mipmap/breath" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_weight="2"
+            android:text="@string/breath"
+            android:textColor="@color/color_9"
+            android:textSize="15sp" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="4">
+
+            <TextView
+                android:id="@+id/tv_reimbursement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:text="@string/productDefault"
+                android:textColor="@color/color_3"
+
+                android:textSize="15sp"
+                tools:ignore="RtlSymmetry" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/backgroundLine" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="@dimen/dp_10"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@mipmap/reimbursement_means" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_weight="2"
+            android:text="@string/reimbursementMeans"
+            android:textColor="@color/color_9"
+            android:textSize="15sp" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="4">
+
+            <TextView
+                android:id="@+id/tv_reimbursement_means"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:text="@string/productDefault"
+                android:textColor="@color/color_3"
+
+                android:textSize="15sp"
+                tools:ignore="RtlSymmetry" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/backgroundLine" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginBottom="@dimen/dp_10"
+     >
+
+        <ImageView
+            android:id="@+id/iv_product_details_investment"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@mipmap/earnings" />
+
+        <TextView
+            android:id="@+id/tv_product_details_investment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@+id/iv_product_details_investment"
+            android:layout_toRightOf="@+id/iv_product_details_investment"
+            android:text="@string/eachInvestment"
+            android:textColor="@color/color_3"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_product_details_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_product_details_investment"
+            android:layout_alignStart="@+id/tv_product_details_investment"
+            android:layout_below="@+id/iv_product_details_investment"
+            android:layout_marginTop="5dp"
+            android:text="0.00"
+            android:textColor="@color/color_red_fb5a5c"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_product_details_amount"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/tv_product_details_amount"
+            android:text="@string/specificBenefits"
+            android:textColor="@color/color_9"
+            android:textSize="12sp" />
+
+
+    </RelativeLayout>
+    <!--新加 end-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:background="@color/color_f4"
+        android:gravity="center"
+        android:orientation="vertical"
+      >
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="5dp"
+            android:drawableRight="@mipmap/slide"
+            android:text="上滑查看更多项目信息"
+            android:textColor="#888"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

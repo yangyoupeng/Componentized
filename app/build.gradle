@@ -1,0 +1,90 @@
+apply plugin: 'com.android.application'
+
+//引用bugly配置文件
+apply from: "tinker-support.gradle"
+
+def releaseTime() {
+    return new Date().format("yyyyMMdd", TimeZone.getTimeZone("GMT+8"))
+}
+
+def ext = rootProject.ext
+def version = ext.versions
+def appPackage = ext.appID
+def dependencie = ext.dependencies
+//获取签名文件
+def keystorePropertiesFile = rootProject.file("../Miaolicai_Componentization/app/keystore.properties")
+def keystoreProperties = new Properties()
+keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+
+android {
+    compileSdkVersion version.compileSdkVersion
+    defaultConfig {
+        applicationId appPackage.app
+        minSdkVersion version.minSdkVersion
+        targetSdkVersion version.targetSdkVersion
+        versionCode version.versionCode
+        versionName version.versionName
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+
+        //个推配置
+        manifestPlaceholders = [
+                GETUI_APP_ID    : "QvgsUl69W68vXHGHvEB2MA",
+                GETUI_APP_KEY   : "laVMmeV4GJ6quyGdUASte7",
+                GETUI_APP_SECRET: "qxkzmsztKW8Y6kpzU5SMW4"
+        ]
+
+        ndk {
+            abiFilters "armeabi", "armeabi-v7a", "x86_64"
+        }
+
+    }
+    signingConfigs {
+        config {
+            keyAlias keystoreProperties['keyAlias']
+            keyPassword keystoreProperties['keyPassword']
+            storeFile file(keystoreProperties['storeFile'])
+            storePassword keystoreProperties['storePassword']
+        }
+    }
+    buildTypes {
+        debug {
+            minifyEnabled false
+            signingConfig signingConfigs.config
+        }
+        release {
+            minifyEnabled false
+            signingConfig signingConfigs.config
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            applicationVariants.all { variant ->
+                variant.outputs.all { output ->
+                    outputFileName = "miaolicai_${releaseTime()}_v${variant.versionName}.apk"
+                }
+            }
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation project(':common')
+    //个推sdk    只让app主模块去依赖
+    implementation dependencie.getui
+    implementation project(':thermal_remediation')//热更新模块
+    //如果是集成模式下，才去依赖这些模块
+    if (!isModule.toBoolean()) {
+        api project(':module_found')
+        api project(':module_home')
+        api project(':module_login')
+        api project(':module_my_assets')
+        api project(':module_product')
+    }
+
+}

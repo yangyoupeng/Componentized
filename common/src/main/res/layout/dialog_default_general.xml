@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginLeft="35dp"
+    android:layout_marginRight="35dp"
+    android:background="@drawable/bg_radius_white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:lineSpacingExtra="10dp"
+        android:layout_margin="20dp"
+        android:text="请同意并阅读"
+        android:textColor="#555"
+        android:textSize="15sp" />
+
+    <View
+        android:background="@color/color_e4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/btn_negative"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_weight="1"
+                android:background="@null"
+                android:text="取消"
+                android:textColor="#F4583F"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+        <View
+            android:background="@color/color_e4"
+            android:layout_width="1dp"
+            android:layout_height="match_parent" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/btn_positive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_weight="1"
+                android:background="@null"
+                android:text="确定"
+                android:textColor="#F4583F"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

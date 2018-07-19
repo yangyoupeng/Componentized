@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Module_Home</string>
+
+
+
+
+
+    <string name="hot_sign">每日签到</string>
+    <string name="hot_new">新手有礼</string>
+    <string name="hot_task">任务中心</string>
+    <string name="hot_about">关于喵理财</string>
+
+    <string name="stateHolding">央企控股</string>
+    <string name="fundDepository">资金存管</string>
+    <string name="ICPCertification">ICP认证</string>
+
+    <string name="hot_notice">资金由第三方资金托管平台联动优势托管</string>
+    <string name="hot_five_safeguard">项目、运营、系统、资金、法律五重保障</string>
+    <string name="hot_piggy_bank1">活期理财</string>
+    <string name="hot_piggy_bank2">随存随取 收益稳健</string>
+    <string name="hot_seven_day_rate">七日年化利率</string>
+    <string name="hot_new_only1">新手专享</string>
+    <string name="hot_new_only2">仅限新人投资 短期高收益</string>
+    <string name="hot_expected_rate">预期年化利率</string>
+    <string name="hot_deadline">项目期限</string>
+    <string name="hot_min_money">起投金额</string>
+    <string name="hot_recommend1">多重回款保障 安全可靠</string>
+
+</resources>

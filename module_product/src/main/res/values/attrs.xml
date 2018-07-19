@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--线性进度条-->
+    <declare-styleable name="LinearProgressView">
+        <attr name="bgColor" format="color"/>
+        <attr name="fgColor" format="color"/>
+        <attr name="heightProgress" format="dimension"/>
+        <attr name="radiusProgress" format="dimension"/>
+        <attr name="showPercent" format="boolean"/>
+        <attr name="textSizePercent" format="dimension"/>
+    </declare-styleable>
+
+
+</resources>

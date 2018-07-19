@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="选择付款方式"
+        android:textColor="#555555" />
+
+    <View style="@style/ViewDefaultLine" />
+
+    <RelativeLayout
+        android:id="@+id/rlayout_bank"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@drawable/selector_white"
+        android:clickable="true">
+
+        <ImageView
+            android:id="@+id/iv_bank_logo"
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:scaleType="center"
+            android:src="@mipmap/ic_balance_payment" />
+
+        <TextView
+            android:id="@+id/tv_bank_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/iv_bank_logo"
+            android:layout_marginLeft="11dp"
+            android:layout_toRightOf="@id/iv_bank_logo"
+            android:text=""
+            android:textColor="#555555" />
+
+        <TextView
+            android:id="@+id/tv_bank_quota"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/iv_bank_logo"
+            android:layout_marginLeft="11dp"
+            android:textColor="#cfcfcf"
+            android:layout_toRightOf="@id/iv_bank_logo"
+            android:text="" />
+
+        <ImageView
+            android:id="@+id/iv_is_select1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:src="@mipmap/ic_payment_select"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <View
+        style="@style/ViewDefaultLine"
+        android:layout_marginLeft="15dp" />
+
+    <RelativeLayout
+        android:id="@+id/rlayout_balances"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@drawable/selector_white"
+        android:clickable="true">
+
+        <ImageView
+            android:id="@+id/iv1"
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:scaleType="center"
+            android:src="@mipmap/ic_balance_payment" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/iv1"
+            android:layout_marginLeft="11dp"
+            android:layout_toRightOf="@id/iv1"
+            android:text="账户余额"
+            android:textColor="#555555" />
+
+        <TextView
+            android:id="@+id/tv_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/iv1"
+            android:layout_marginLeft="11dp"
+            android:layout_toRightOf="@id/iv1"
+            android:text=""
+            android:textColor="#cfcfcf" />
+
+        <ImageView
+            android:id="@+id/iv_is_select2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:src="@mipmap/ic_payment_select"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <View style="@style/ViewDefaultLine" />
+
+    <TextView
+        android:id="@+id/tv_dismiss"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:gravity="center"
+        android:text="取消"
+        android:textColor="#898989" />
+
+</LinearLayout>

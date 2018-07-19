@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.maoliicai.common.widget.TitleBar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    app:TitleColor="@color/color_white"
+    app:titleBackground="@color/color_red_fb5a5c"
+    app:hideLine="gone"/>
+
+
+
+

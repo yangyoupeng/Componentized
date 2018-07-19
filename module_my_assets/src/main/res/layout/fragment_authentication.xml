@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?><!--新实名认证界面（替换原来的老页面）-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_authentication"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grayE4e4e4"
+    android:orientation="vertical">
+
+    <!--身份证-银行卡-交易密码   图片-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_white"
+        android:paddingTop="15dp">
+
+        <ImageView
+            android:id="@+id/iv_id_card"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@mipmap/icon_identity_card" />
+
+
+        <ImageView
+            android:id="@+id/iv_bank_card"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@mipmap/icon_bank_card_gray" />
+
+
+        <ImageView
+            android:id="@+id/iv_set_password"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@mipmap/icon_set_password_gray" />
+
+    </LinearLayout>
+    <!--身份证-银行卡-交易密码   文字-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_white"
+        android:paddingBottom="15dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/identityCard"
+            android:textColor="@color/color_red_fb5a5c" />
+
+        <TextView
+            android:id="@+id/tv_bank_card"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/bankCard"
+            android:textColor="@color/color_9" />
+
+        <TextView
+            android:id="@+id/tv_password"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/password"
+            android:textColor="@color/color_9" />
+
+    </LinearLayout>
+    <!--身份证-银行卡-交易密码   下划线-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/color_red_fb5a5c" />
+
+        <View
+            android:id="@+id/view_bank_card"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/color_red_fb5a5c"
+            android:visibility="invisible" />
+
+        <View
+            android:id="@+id/view_password"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/color_red_fb5a5c"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/color_white">
+
+        <TextView
+            android:id="@+id/tv_first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:text="@string/realName"
+            android:textColor="@color/color_3"
+            android:textSize="15dp" />
+
+        <com.maoliicai.module_my_assets.view.AddSpaceTextWatcher
+            android:id="@+id/et_first"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:gravity="center_vertical"
+            android:background="@null"
+            android:hint="@string/inputName"
+            android:paddingLeft="25dp"
+            android:textColorHint="@color/color_c0"
+            android:textSize="15dp"
+            android:textColor="@color/color_3"
+            app:epaysdk_type="card" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/iv_clear1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:src="@mipmap/login_backs"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:id="@+id/rl_support_bank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_above="@+id/tv_bank"
+                    android:layout_alignEnd="@+id/tv_bank"
+                    android:layout_alignRight="@+id/tv_bank"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginRight="12dp"
+                    android:src="@mipmap/icon_bank" />
+
+                <TextView
+                    android:id="@+id/tv_bank"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center"
+                    android:paddingTop="5dp"
+                    android:text="@string/bank"
+                    android:textColor="@color/blue007"
+                    android:textSize="10dp" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        style="@style/ViewDefaultLine"
+        android:layout_marginLeft="15dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="@color/color_white"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="@string/identityCardNumber"
+            android:textColor="@color/color_3"
+            android:textSize="15sp" />
+
+        <com.maoliicai.module_my_assets.view.AddSpaceTextWatcher
+            android:id="@+id/et_second"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:gravity="center_vertical"
+            android:background="@null"
+            android:hint="@string/identityCardNumber18"
+            android:paddingLeft="25dp"
+            android:textColorHint="@color/grayc0"
+            android:textSize="15dp"
+            android:textColor="@color/color_3"
+            app:epaysdk_type="IDCard" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/iv_clear2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginRight="15dp"
+                android:src="@mipmap/login_backs"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <!--描述-->
+    <TextView
+        android:id="@+id/tv_describe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:lineSpacingExtra="12dp"
+        android:text="@string/instructions"
+        android:textColor="@color/color_9"
+        android:textSize="12sp" />
+    <!--下一步按钮-->
+    <Button
+        android:id="@+id/next_step"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/btn_radius_gray"
+        android:enabled="false"
+        android:text="@string/nextStep"
+        android:textColor="@color/color_white"
+        android:textSize="12dp" />
+    <!--交易密码显示的button-->
+
+    <TextView
+        android:id="@+id/tv_later"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:text="@string/later"
+        android:textColor="@color/color_red_fb5a5c"
+        android:textSize="12dp"
+        android:visibility="gone" />
+
+</LinearLayout>

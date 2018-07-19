@@ -1,0 +1,10 @@
+<resources>
+
+    <string name="title_activity_found">FoundActivity</string>
+
+
+    <!--发现列表-->
+    <string name="activityZone">活动专区</string>
+
+
+</resources>

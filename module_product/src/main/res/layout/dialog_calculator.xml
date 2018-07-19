@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--产品详情   计算器dialog布局-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="35dp"
+    android:layout_marginRight="35dp"
+    android:background="@drawable/bg_radius_white"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <RelativeLayout
+        android:id="@+id/rl_titles"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:layout_width="300dip"
+            android:layout_height="40dip"
+            android:gravity="center"
+            android:text="计算收益"
+            android:textColor="#555"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/iv_dismiss"
+            android:layout_width="wrap_content"
+            android:layout_height="40dip"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:src="@mipmap/ic_pay_dialog_exit"
+            android:text="取消"
+            android:textColor="#555"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <View style="@style/ViewDefaultLine" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:background="#eaeaea"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="投资金额(元):"
+            android:textColor="#555"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/et_money"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center|right"
+            android:hint="请输入金额"
+            android:inputType="number"
+            android:maxLength="8"
+            android:paddingRight="15dp"
+            android:textColor="#bebebe"
+            android:textColorHint="#bebebe"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="280dp"
+        android:layout_height="45dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="预期收益 (元):"
+            android:textColor="#555"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_invest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:singleLine="true"
+            android:text="0.00"
+            android:textColor="#F4583F"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</LinearLayout>

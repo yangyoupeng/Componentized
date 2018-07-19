@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:background="@color/color_f4"
+              android:orientation="vertical">
+
+    <com.maoliicai.common.widget.TitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        app:TitleColor="#FFF"
+        app:hideLine="gone"
+        app:leftIcon="@mipmap/icon_back"
+        app:title="设置"
+        app:titleBackground="@color/color_red_fb5a5c"
+        />
+
+    <RelativeLayout
+        android:id="@+id/rl_contact_us"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/selector_white"
+        android:layout_below="@+id/rl_status" >
+
+        <ImageView
+            android:id="@+id/iv_tag7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:textSize="18dp"
+            android:src="@mipmap/icon_contact" />
+
+        <ImageView
+            android:id="@+id/iv_tag17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:src="@mipmap/icon_right_arrows" />
+
+        <TextView
+            android:id="@+id/tv_tag7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/iv_tag7"
+            android:text="联系我们"
+            android:textColor="@color/color_3"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+    <View
+        style="@style/ViewDefaultLine"
+        android:layout_marginLeft="15dp"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/selector_white"
+        android:layout_below="@+id/rl_main_chatus" >
+
+        <ImageView
+            android:id="@+id/iv_tag8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:textSize="18dp"
+            android:src="@mipmap/icon_feedback"/>
+
+        <ImageView
+            android:id="@+id/iv_tag18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:src="@mipmap/icon_right_arrows" />
+
+        <TextView
+            android:id="@+id/tv_tag8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/iv_tag8"
+            android:text="意见反馈"
+            android:textColor="@color/color_3"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+    <View
+        style="@style/ViewDefaultLine"
+        android:layout_marginLeft="15dp"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_versions_info"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/selector_white"
+        android:layout_below="@+id/rl_main_sport" >
+
+        <ImageView
+            android:id="@+id/iv_tag9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:textSize="18sp"
+            android:src="@mipmap/icon_version"/>
+
+        <TextView
+            android:id="@+id/tv_tag9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/iv_tag9"
+            android:text="版本信息"
+            android:textColor="@color/color_3"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tv_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:text="v1.0.0"
+            android:src="@mipmap/icon_right_arrows"
+            android:textColor="@color/color_80"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

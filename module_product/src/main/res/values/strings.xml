@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">Module_Product</string>
+
+
+    <!--产品列表-->
+    <string name="hot_expected_rate">预期年化利率</string>
+    <string name="hot_deadline">项目期限</string>
+    <string name="hot_min_money">起投金额</string>
+    <string name="hot_show_project">查看更多已售罄和已还款项目</string>
+
+    <!--产品详情-->
+    <string name="earnings">预期收益</string>
+    <string name="voucherPackage">无可用券包</string>
+    <string name="investmentEtarn">投资一万赚</string>
+    <string name="noPurchase">不限购</string>
+    <string name="reimbursementMeans">还款方式</string>
+    <string name="breath">起息方式</string>
+    <string name="total">项目总额</string>
+    <string name="eachInvestment">每投资10000元,到期后预期可赚</string>
+    <string name="specificBenefits">具体收益以实际到账金额为准</string>
+    <string name="productDefault">默认</string>
+    <string name="TodayInvestment">今日投资</string>
+    <string name="payoutDate">起息日期</string>
+    <string name="dueToTheReceivable">到期回款</string>
+
+
+    <!--投资成功的页面-->
+    <string name="investmentAmount">投资金额(元)</string>
+    <string name="deadline">投资期限(天)</string>
+    <string name="expectedEarnings">预期收益(元)</string>
+    <string name="integralReward">使用优惠券</string>
+    <string name="electronicContract">继续投资</string>
+    <string name="complete">完成</string>
+
+
+
+    <string name="pull_to_refresh">下拉可以刷新</string>
+    <string name="release_to_refresh">释放立即刷新</string>
+    <string name="refreshing">正在刷新…</string>
+    <string name="not_updated_yet">暂未更新过</string>
+    <string name="updated_at">上次更新于%1$s前</string>
+    <string name="updated_just_now">刚刚更新</string>
+    <string name="time_error">时间有问题</string>
+    <string name="action_settings">Settings</string>
+
+
+    <!--券包页面-->
+    <string name="noCoupons">暂无优惠券可用</string>
+</resources>

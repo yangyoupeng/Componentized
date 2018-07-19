@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+    android:background="@color/color_f4">
+
+    <com.maoliicai.common.widget.TitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        app:TitleColor="#FFF"
+        app:hideLine="gone"
+        app:leftIcon="@mipmap/icon_back"
+        app:title="意见反馈"
+        app:titleBackground="@color/color_red_fb5a5c"
+        />
+
+    <EditText
+        android:id="@+id/et_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/shape_sidespan"
+        android:gravity="top"
+        android:hint="感谢您对喵理财的支持，您的建议对我们非常重要，喵理财将会认真审核您的每一条反馈。(字数300以内)！"
+        android:lines="8"
+        android:maxLength="300"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="8dp"
+        android:textSize="14dp"
+        android:textColorHint="@color/color_c0"
+        android:textColor="@color/color_3"/>
+
+    <TextView
+        android:id="@+id/tv_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/btn_radius5dp_red"
+        android:text="提交"
+        android:textColor="@color/color_white"
+        android:textSize="15dp"/>
+
+</LinearLayout>

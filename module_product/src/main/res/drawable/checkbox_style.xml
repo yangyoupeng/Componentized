@@ -1,0 +1,11 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:drawable="@mipmap/ic_voucher_red_bag_is_select"
+        android:state_checked="true"/>
+    <item
+        android:drawable="@null"
+        android:state_checked="false"/>
+    <!--<item-->
+        <!--android:drawable="@drawable/sel_nor"/>-->
+
+</selector>

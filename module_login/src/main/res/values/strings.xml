@@ -1,0 +1,21 @@
+<resources>
+
+    <!--首页底部-->
+    <string name="title_home">首页</string>
+    <string name="title_product">产品列表</string>
+    <string name="title_find">发现</string>
+    <string name="title_my">我的资产</string>
+
+    <!--fragment toolbar 标题-->
+    <string name="toolbar_title_product">理财产品</string>
+    <string name="toolbar_title_found">发现</string>
+
+    <!--登录注册-->
+    <string name="pwd_hint">请设置6-16位数字或字母密码</string>
+
+    <!--首页第一次进入APP注册弹窗-->
+    <string name="logIn">我已注册 去登录</string>
+    <string name="registerNow">立即注册</string>
+
+
+</resources>

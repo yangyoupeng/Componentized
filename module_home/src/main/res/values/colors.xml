@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+
+
+
+
+    <!--hotFragment-->
+    <color name="color_c0">#c0c0c0</color>
+
+    <!--HotGuideLayout-->
+    <color name="color_yellow_fd9530">#fd9530</color>
+
+
+</resources>

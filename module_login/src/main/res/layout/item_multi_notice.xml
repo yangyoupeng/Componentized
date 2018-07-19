@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/ll_root"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.maoliicai.common.widget.RoundRectImageView
+        android:id="@+id/rriv"
+        android:layout_width="275dp"
+        android:layout_height="350dp"
+        android:scaleType="centerCrop"
+        app:roundRadiusTopLeft="20dp"
+        app:roundRadiusTopRight="20dp"
+        app:roundRadiusBottomRight="20dp"
+        app:roundRadiusBottomLeft="20dp"/>
+    <!--android:background="@drawable/selector_corners_20"-->
+</LinearLayout>
+
+

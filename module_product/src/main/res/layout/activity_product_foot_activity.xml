@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f4"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_layout_return"
+        android:id="@+id/product_foot_toolbar"
+        />
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_product_foot"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/white"
+        app:tabIndicatorColor="@color/color_red_fb5a5c"
+        app:tabSelectedTextColor="@color/color_red_fb5a5c"
+        app:tabTextColor="@color/color_9"
+        />
+
+   <android.support.v4.view.ViewPager
+
+       android:layout_marginTop="@dimen/dp_10"
+       android:id="@+id/vp_product_foot"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+   </android.support.v4.view.ViewPager>
+
+</LinearLayout>

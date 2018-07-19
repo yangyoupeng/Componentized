@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/shape_dialog"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="确认充值"
+            android:textColor="@color/color_80"
+            android:textSize="15dp" />
+
+        <View
+            style="@style/ViewDefaultLine"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="15dp" />
+
+        <TextView
+            android:id="@+id/tv_money"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="￥1000.00"
+            android:textColor="@color/color_3"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="已发送短信验证码到手机"
+            android:textColor="@color/color_9"
+            android:textSize="12dp"
+            android:visibility="gone" />
+
+
+        <EditText
+            android:id="@+id/et_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_radius5px_line_c0"
+            android:hint="请输入银行预留手机号码"
+            android:inputType="number"
+            android:maxLength="11"
+            android:paddingLeft="10dp"
+            android:textColor="@color/color_3"
+            android:textColorHint="@color/color_c0"
+            android:textSize="12dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/et_message_code"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="7"
+                android:background="@drawable/selector_radius5px_line_c0"
+                android:gravity="center_vertical"
+                android:hint="请输入验证码"
+                android:inputType="number"
+                android:maxLength="6"
+                android:paddingLeft="10dp"
+                android:textColor="@color/color_3"
+                android:textColorHint="@color/color_c0"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/tv_get_message"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="4"
+                android:background="@drawable/btn_radius15dp_red"
+                android:gravity="center"
+                android:text="获取验证码"
+                android:textColor="@color/color_white"
+                android:textSize="12dp" />
+
+        </LinearLayout>
+
+        <View style="@style/ViewDefaultLine" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_cancel"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="取消"
+                android:textColor="@color/color_3"
+                android:textSize="15dp" />
+
+            <View style="@style/ViewDefaultLineVertical" />
+
+            <TextView
+                android:id="@+id/tv_confirm"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="确定"
+                android:textColor="@color/color_red_fb5a5c"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

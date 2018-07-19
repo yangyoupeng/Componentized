@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff">
+
+    <TextView
+        android:id="@+id/tv_tx_txjg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="10dp"
+        android:text="充值成功"
+        android:textColor="#333333"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_tx_txje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_tx_txjg"
+        android:layout_below="@+id/tv_tx_txjg"
+        android:layout_marginTop="2dp"
+        android:textColor="@color/color_red"
+        android:textSize="13sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignLeft="@+id/tv_tx_txjg"
+        android:layout_below="@+id/tv_tx_txje"
+        android:layout_marginTop="10dp"
+        android:background="#f0f4f5" />
+
+    <TextView
+        android:id="@+id/tv_cz_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="13dp"
+        android:layout_toLeftOf="@+id/tv_tx_lsh"
+        android:text="流水号:"
+        android:textColor="#969899"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/tv_tx_lsh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/tv_cz_tag"
+        android:layout_marginRight="15dp"
+        android:textColor="#808080"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/tv_tx_sqsj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tv_tx_lsh"
+        android:layout_marginRight="2dp"
+        android:textColor="#808080"
+        android:textSize="13sp" />
+
+
+</RelativeLayout>

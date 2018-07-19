@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:tools="http://schemas.android.com/tools" >
+    <View style="@style/ViewDefaultLine"/>
+
+    <View style="@style/ViewDefaultStrip"/>
+
+    <View style="@style/ViewDefaultLine"/>
+</merge>

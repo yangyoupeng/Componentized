@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--首页注册认证进度-->
+    <declare-styleable name="HotGuideLayout">
+        <attr name="isShowLine" format="boolean"/>
+        <attr name="guideNumber" format="string"/>
+        <attr name="guideTitle" format="string"/>
+        <attr name="guideReward" format="string"/>
+        <attr name="guideStatus" format="integer"/>
+    </declare-styleable>
+    
+
+</resources>

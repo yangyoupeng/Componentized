@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tv_cz_czjg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#333333"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_cz_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:layout_toRightOf="@+id/tv_cz_czjg"
+            android:textColor="#fd8026"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_cz_czsj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_cz_czjg"
+            android:layout_below="@+id/tv_cz_czjg"
+            android:layout_marginTop="2dp"
+            android:textColor="#808080"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_cz_czmoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:text="0.00元"
+            android:textColor="@color/color_red"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignLeft="@+id/tv_cz_czjg"
+            android:layout_below="@+id/tv_cz_czsj"
+            android:layout_marginTop="10dp"
+            android:background="#f2f2f2" />
+
+        <TextView
+            android:id="@+id/tv_cz_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tv_cz_czsj"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/tv_cz_czsj"
+            android:text="流水号:"
+            android:textColor="#808080"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_cz_lsh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tv_cz_tag"
+            android:layout_toRightOf="@+id/tv_cz_tag"
+            android:textColor="#808080"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+</LinearLayout>

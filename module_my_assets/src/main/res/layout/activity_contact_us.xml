@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:background="@color/color_f4"
+              android:orientation="vertical">
+
+    <com.maoliicai.common.widget.TitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        app:TitleColor="#FFF"
+        app:hideLine="gone"
+        app:leftIcon="@mipmap/icon_back"
+        app:title="联系我们"
+        app:titleBackground="@color/color_red_fb5a5c"/>
+
+    <LinearLayout
+        android:id="@+id/ll_official_website"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/selector_white"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:drawableLeft="@mipmap/icon_my_logo_contact_us"
+            android:drawablePadding="5dip"
+            android:gravity="center"
+            android:text="喵理财官网"
+            android:textColor="@color/color_3"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tv_official_website"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:drawablePadding="5dp"
+            android:drawableRight="@mipmap/icon_right_arrows"
+            android:gravity="center|right"
+            android:textColor="@color/color_80"
+            android:textSize="13dp" />
+
+    </LinearLayout>
+
+    <View
+        style="@style/ViewDefaultLine"
+        android:layout_marginLeft="15dp"/>
+
+    <LinearLayout
+        android:id="@+id/ll_my_wx"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/selector_white"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:drawableLeft="@mipmap/icon_my_set_wx"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="微信公众号"
+            android:textColor="@color/color_3"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:id="@+id/tv_my_wx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:drawablePadding="5dp"
+            android:drawableRight="@mipmap/icon_right_arrows"
+            android:gravity="center|right"
+            android:textColor="@color/color_80"
+            android:textSize="13dp"/>
+
+    </LinearLayout>
+
+    <View
+        style="@style/ViewDefaultLine"
+        android:layout_marginLeft="15dp"/>
+
+    <LinearLayout
+        android:id="@+id/ll_my_service"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/selector_white"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:drawableLeft="@mipmap/icon_my_set_service"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="客服电话"
+            android:textColor="@color/color_3"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tv_service_tel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:drawablePadding="5dp"
+            android:drawableRight="@mipmap/icon_right_arrows"
+            android:gravity="center|right"
+            android:textColor="@color/color_80"
+            android:textSize="13dp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:textColor="@color/color_8"
+            android:textSize="12dp"
+            android:text="客服工作时间"
+            android:layout_marginBottom="40dp" />
+        <TextView
+            android:id="@+id/tv_working_hours"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:textColor="@color/color_8"
+            android:textSize="12dp"
+            android:layout_marginBottom="20dp" />
+
+    </RelativeLayout>
+
+    <!--android:text="客服工作时间\n微信平台（09:00-17:30）\n客服热线（09:00-21:00）"-->
+</LinearLayout>

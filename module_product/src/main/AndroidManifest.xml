@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.maoliicai.module_product">
+
+
+    <application>
+
+        <!--  投资中 已还款  （产品列表脚布局点击进入的页面）-->
+        <!--产品详情页面-->
+        <!--投资页面（从产品详情进入）-->
+        <!--我的券包页面   （投资页面进入）-->
+        <!--投资成功页面，（投资页面进入）-->
+        <!--支付密码-->
+
+    </application>
+</manifest>
